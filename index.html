@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  
+  
+</head>
+
+<body>
+
+  <div id="weather-container">
+    <div id="search-bar">
+      <!-- <div id="location-icon" onclick="getLocation()">&#x1F4CD;</div> -->
+      <i class="fa-solid fa-location-dot" id="location-icon" onclick="getLocation()"></i>
+      <input type="text" id="search-input" placeholder="Enter city">
+      <i class="fa-solid fa-magnifying-glass" id="search-icon" onclick="searchWeather()"></i>
+      <!-- <div id="search-icon" onclick="searchWeather()">&#128269;</div> -->
+    </div>
+
+    <div id="weather-info">
+      <div id="weather-icon"></div>
+      <div id="temperature"></div>
+      <div id="description"></div>
+      <br>
+      <i class="fa-solid fa-cloud" style="font-size: 1.6rem;"></i>
+      <div id="precipitation"></div>
+      <i class="fa-solid fa-sun" style="font-size: 1.6rem;"></i>
+      <div id="humidity"></div>
+    </div>
+  </div>
+
+  
+
+</body>
+
+</html>
